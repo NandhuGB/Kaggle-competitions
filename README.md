@@ -1,6 +1,3 @@
-Below is a sample `README.md` template for a GitHub repository that contains solutions for various Kaggle competitions. You can adjust it based on your specific projects and preferences:
-
----
 
 # 🏆 Kaggle Competitions Repository
 
