@@ -1,5 +1,5 @@
 dataset/
 submission_files/
 .ipynb_checkpoints/
-geocoding_api.csv
 __pycache__/
+geocoding_api.csv
