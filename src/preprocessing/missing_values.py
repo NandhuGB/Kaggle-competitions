@@ -21,7 +21,7 @@ class MissingValuesStrategy:
 # Dropping missing values
 class DroppingMissingValuesStrategy(MissingValuesStrategy):
     def handle(self, df, column):
-        return df.dropna(subset = [column], inplace = True)
+        return df.dropna(subset = [column])
 
 
 # Filling missing value with mean of that column
@@ -47,10 +47,9 @@ class FillModeMissingValuesStrategy(MissingValuesStrategy):
 
 # Filling missing value with constant value
 class FillConstMissingValuesStrategy(MissingValuesStrategy):
-    def __init__(self, const):
-        self.const = const
-    def handle(self, df, column):
-        df.fillna({column:self.const}, inplace =True)
+
+    def handle(self, df, column, const):
+        df.fillna({column:const}, inplace =True)
         return df
 
 
